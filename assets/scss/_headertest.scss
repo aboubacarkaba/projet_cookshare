@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100;
+  font-family: monospace;
+
+  header {
+    width: 100%;
+    height: 20vh;
+
+    background: linear-gradient(to right, rgb(23, 23, 24), white);
+
+    nav {
+      position: fixed;
+      width: 100%;
+    }
+    nav ul {
+      padding-top: 54px;
+      text-align: right;
+      margin: 0;
+      overflow: hidden;
+    }
+    nav ul li {
+      display: inline-block;
+      padding: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: rgb(160, 17, 17);
+      font-size: 20px;
+    }
+    .symbole {
+      position: fixed;
+      float: left;
+    }
+    nav.scroll ul {
+      background-image: url("../img/cielly.jpg");
+      width: 100%;
+      height: 20vh;
+    }
+    .hamburg {
+      display: none;
+      background-image: url("../img/cielly.jpg");
+      width: 100%;
+      box-sizing: border-box;
+      cursor: pointer;
+      text-align: right;
+      padding: 15px 24px;
+      color: rgb(160, 17, 17);
+      font-size: 40px;
+    }
+
+    .link-space {
+      text-transform: lowercase;
+      transition: all 0.3s ease-in-out;
+    }
+    .link-space:hover {
+      border-bottom: 2px solid rgb(160, 17, 17);
+      padding-bottom: 3px;
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  body {
+    header {
+      .hamburg {
+        display: block;
+      }
+      .symbole {
+        position: fixed;
+        top: 0;
+      }
+      nav ul {
+        max-height: 0px;
+        background-image: url("../img/cielly.jpg");
+        text-align: center;
+      }
+      .burg-menu {
+        max-height: 30em;
+      }
+      nav ul li {
+        width: 100%;
+        padding: 24px 0;
+      }
+    }
+  }
+}

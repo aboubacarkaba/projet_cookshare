@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  .given-1 {
+    .add {
+      text-transform: uppercase;
+
+      text-align: center;
+      background-color: rgb(75, 72, 72);
+      font-size: x-large;
+      color: rgb(250, 246, 246);
+      padding: 18px;
+    }
+    //background-image: url(../img/moov.jpg);
+    margin: 0;
+  }
+  .given-2 {
+    padding-top: 180px;
+    padding-bottom: 80px;
+    background-color: rgb(75, 72, 72);
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    .low{
+      text-align: center;
+      color: #f9fbfc;
+    }
+  }
+
+  img {
+    border: 2px solid rgb(250, 247, 247);
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+  }
+
+  img:hover {
+    box-shadow: 0 0 5px 8px #f9fbfc;
+  }
+
+  #slider {
+    margin: auto;
+  }
+}
+
+
+@media (max-width: 800px){
+body{ 
+  
+  .given-2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+    
+  }
+  }
+}
