@@ -3,4 +3,4 @@
 ----
 *langage php
 *javascript
-utilisé pour mener à bien le projet
+*utilisé pour mener à bien le projet
